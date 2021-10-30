@@ -118,7 +118,7 @@ async def bot_start(event):
         ]
     else:
         start_msg = "Hey Master!\
-            \nHow can i help you ?"
+            \nWie kann ich helfen?"
         buttons = None
     try:
         await event.client.send_message(

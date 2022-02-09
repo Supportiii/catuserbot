@@ -12,9 +12,9 @@ plugin_category = "admin"
     pattern="warn(?:\s|$)([\s\S]*)",
     command=("warn", plugin_category),
     info={
-        "header": "To warn a user.",
-        "description": "will warn the replied user.",
-        "usage": "{tr}warn <reason>",
+        "header": "Um einen Nutzer zu warnen.",
+        "description": "Warnt den als Antwort gegebenen Nutzer.",
+        "usage": "{tr}warn <Grund>",
     },
 )
 async def _(event):

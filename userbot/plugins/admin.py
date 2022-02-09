@@ -267,15 +267,15 @@ async def _ban_person(event):
             await event.client.send_message(
                 BOTLOG_CHATID,
                 f"#BAN\
-                \nUSER: [{user.first_name}](tg://user?id={user.id})\
+                \nNUTZER: [{user.first_name}](tg://user?id={user.id})\
                 \nCHAT: {get_display_name(await event.get_chat())}(`{event.chat_id}`)\
-                \nREASON : {reason}",
+                \nGRUND: {reason}",
             )
         else:
             await event.client.send_message(
                 BOTLOG_CHATID,
                 f"#BAN\
-                \nUSER: [{user.first_name}](tg://user?id={user.id})\
+                \nNUTZER: [{user.first_name}](tg://user?id={user.id})\
                 \nCHAT: {get_display_name(await event.get_chat())}(`{event.chat_id}`)",
             )
 
@@ -310,7 +310,7 @@ async def nothanos(event):
             await event.client.send_message(
                 BOTLOG_CHATID,
                 "#UNBAN\n"
-                f"USER: [{user.first_name}](tg://user?id={user.id})\n"
+                f"NUTZER: [{user.first_name}](tg://user?id={user.id})\n"
                 f"CHAT: {get_display_name(await event.get_chat())}(`{event.chat_id}`)",
             )
     except UserIdInvalidError:
@@ -573,7 +573,7 @@ async def pin(event):
         await event.client.send_message(
             BOTLOG_CHATID,
             f"#PIN\
-                \n__successfully pinned a message in chat__\
+                \n__pin fertig__\
                 \nCHAT: {get_display_name(await event.get_chat())}(`{event.chat_id}`)\
                 \nLOUD: {is_silent}",
         )

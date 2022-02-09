@@ -21,9 +21,9 @@ StartTime = time.time()
 catversion = "3.0.4"
 
 if Config.UPSTREAM_REPO == "badcat":
-    UPSTREAM_REPO_URL = "https://github.com/Jisan09/catuserbot"
+    UPSTREAM_REPO_URL = "https://github.com/Supportiii/catuserbot/"
 elif Config.UPSTREAM_REPO == "goodcat":
-    UPSTREAM_REPO_URL = "https://github.com/sandy1709/catuserbot"
+    UPSTREAM_REPO_URL = "https://github.com/Supportiii/catuserbot/"
 else:
     UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
 

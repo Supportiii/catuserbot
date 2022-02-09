@@ -28,9 +28,9 @@ async def _(event):
     type_of_group = event.pattern_match.group(1)
     group_name = event.pattern_match.group(2)
     if type_of_group == "c":
-        descript = "This is a Test Channel created using catuserbot"
+        descript = "Hallo!"
     else:
-        descript = "This is a Test Group created using catuserbot"
+        descript = "Hallo!"
     if type_of_group == "g":
         try:
             result = await event.client(
@@ -48,7 +48,7 @@ async def _(event):
                 )
             )
             await edit_or_reply(
-                event, f"Group `{group_name}` created successfully. Join {result.link}"
+                event, f"Gruppe `{group_name}` erstellt. Tritt bei: {result.link}"
             )
         except Exception as e:
             await edit_delete(event, f"**Error:**\n{str(e)}")
@@ -69,7 +69,7 @@ async def _(event):
             )
             await edit_or_reply(
                 event,
-                f"Channel `{group_name}` created successfully. Join {result.link}",
+                f"Kanal `{group_name}` erstellt. Tritt bei: {result.link}",
             )
         except Exception as e:
             await edit_delete(event, f"**Error:**\n{e}")
